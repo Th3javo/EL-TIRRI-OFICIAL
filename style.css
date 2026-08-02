@@ -510,75 +510,71 @@ z-index: 0;
 }
 
 /* =========================
-MOBILE HERO IMAGE
+   MOBILE HERO IMAGE
 ========================= */
 
 @media (max-width: 768px) {
 
-.hero {
-min-height: 100vh;
+  .hero {
+    min-height: 100vh;
+    align-items: flex-start;
+  }
 
-align-items: flex-start;
+  .hero-content {
+    width: 100%;
+    padding-top: 30px;
+    z-index: 3;
+  }
+
+  .hero-image {
+    width: 90vw;
+    max-height: 60vh;
+
+    right: 50%;
+    transform: translateX(50%);
+
+    bottom: 0;
+
+    opacity: 0.85;
+    z-index: 1;
+  }
+
+  .hero-image:hover {
+    transform: translateX(50%);
+  }
+
+  .hero-glow {
+    right: 50%;
+    bottom: 5%;
+
+    width: 300px;
+    height: 300px;
+
+    transform: translateX(50%);
+  }
 
 }
 
-.hero-content {
-width: 100%;
 
-padding-top: 30px;
+/* =========================
+   PORTAL ANIMATION
+========================= */
 
-z-index: 3;
+@keyframes portalPulse {
 
-}
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
 
-.hero-image {
-width: 90vw;
+  50% {
+    transform: scale(1.04);
+    filter: brightness(1.25);
+  }
 
-max-height: 60vh;
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
 
-right: 50%;
-
-transform: translateX(50%);
-
-bottom: 0;
-
-opacity: 0.85;
-
-z-index: 1;
-
-}
-
-.hero-image:hover {
-transform: translateX(50%);
-}
-
-.hero-glow {
-  position: absolute;
-
-  right: 7%;
-  bottom: 8%;
-
-  width: 520px;
-  height: 520px;
-
-  border-radius: 50%;
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(255, 0, 0, 0.08) 0%,
-      rgba(255, 0, 0, 0.18) 45%,
-      rgba(255, 0, 0, 0.65) 68%,
-      rgba(255, 0, 0, 0.05) 70%,
-      transparent 72%
-    );
-
-  box-shadow:
-    0 0 25px rgba(255, 0, 0, 0.8),
-    0 0 70px rgba(255, 0, 0, 0.5),
-    0 0 140px rgba(255, 0, 0, 0.25);
-
-  z-index: 0;
-
-  animation: portalPulse 4s ease-in-out infinite;
 }
