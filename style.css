@@ -630,6 +630,8 @@ transform: scale(1.03);
         rotateY(-12deg)
         rotateX(4deg);
 
+    transform-origin: center;
+
     z-index: 0;
 }
 }
