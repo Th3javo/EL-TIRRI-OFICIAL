@@ -619,20 +619,20 @@ transform: scale(1.03);
   }
 .hero-glow {
     right: 50%;
-    bottom: 4%;
+    bottom: 3%;
 
     width: 360px;
-    height: 360px;
+    height: 520px;
 
     transform:
-      translateX(50%)
-      perspective(700px)
-      rotateY(-12deg)
-      rotateX(4deg);
-}
-  
-  }
+        translateX(50%)
+        perspective(700px)
+        rotateY(-12deg)
+        rotateX(4deg);
 
+    z-index: 0;
+}
+}
 
 /* =========================
    PORTAL ANIMATION
