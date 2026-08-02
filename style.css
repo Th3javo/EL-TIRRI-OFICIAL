@@ -711,14 +711,3 @@ transform: scale(1.03);
   }
 
 }
-/* =========================
-   PORTAL MOBILE - AJUSTE FINAL
-========================= */
-
-@media (max-width: 768px) {
-
-  .hero-glow {
-    animation: portalPulseMobile 4s ease-in-out infinite;
-  }
-
-}
