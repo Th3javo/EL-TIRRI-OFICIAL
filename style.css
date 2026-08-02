@@ -907,3 +907,51 @@ transform: scale(1.03);
   }
 
 }
+/* =========================
+   LIVE STATUS PRO
+========================= */
+
+.live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #ff0000;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.live-indicator span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ff0000;
+
+  box-shadow:
+    0 0 8px #ff0000,
+    0 0 20px rgba(255, 0, 0, 0.8);
+
+  animation: livePulse 1.5s infinite;
+}
+
+#live-text {
+  font-weight: 700;
+}
+
+@keyframes livePulse {
+
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.45;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
