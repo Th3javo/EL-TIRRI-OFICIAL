@@ -523,7 +523,7 @@ transform: scale(1.03);
 
   transform:
     perspective(700px)
-    rotateY(-22deg)
+    rotateY(25deg)
     rotateX(8deg);
 
   transform-origin: center;
@@ -643,7 +643,7 @@ transform: scale(1.03);
   0% {
     transform:
       perspective(700px)
-      rotateY(-22deg)
+      rotateY(25deg)
       rotateX(8deg)
       scale(1);
     filter: brightness(1);
@@ -652,7 +652,7 @@ transform: scale(1.03);
   50% {
     transform:
       perspective(700px)
-      rotateY(-22deg)
+      rotateY(25deg)
       rotateX(8deg)
       scale(1.04);
     filter: brightness(1.25);
@@ -661,7 +661,7 @@ transform: scale(1.03);
   100% {
     transform:
       perspective(700px)
-      rotateY(-22deg)
+      rotateY(25deg)
       rotateX(8deg)
       scale(1);
     filter: brightness(1);
