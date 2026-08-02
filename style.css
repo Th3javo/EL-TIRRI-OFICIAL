@@ -576,6 +576,44 @@ HERO GLOW
 
   opacity: 0.9;
 }
+.hero-glow::before {
+  content: "";
+
+  position: absolute;
+  inset: 12px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 80, 80, 0.8);
+
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.8),
+    inset 0 0 25px rgba(255, 0, 0, 0.4);
+
+  opacity: 0.8;
+}
+
+.hero-glow::after {
+  content: "";
+
+  position: absolute;
+  inset: 35px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(0, 0, 0, 0.95),
+      rgba(30, 0, 0, 0.75),
+      transparent 70%
+    );
+
+  box-shadow:
+    inset 0 0 50px rgba(255, 0, 0, 0.35);
+
+  opacity: 0.9;
+}
 /* =========================
    MOBILE HERO IMAGE
 ========================= */
@@ -609,15 +647,20 @@ HERO GLOW
   .hero-image:hover {
     transform: translateX(50%);
   }
-
-  .hero-glow {
+.hero-glow {
     right: 50%;
-    bottom: 5%;
+    bottom: 4%;
 
-    width: 300px;
-    height: 300px;
+    width: 390px;
+    height: 320px;
 
-    transform: translateX(50%);
+    transform:
+      translateX(50%)
+      perspective(700px)
+      rotateY(-12deg)
+      rotateX(4deg);
+}
+  
   }
 
 }
