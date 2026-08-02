@@ -497,8 +497,8 @@ transform: scale(1.03);
   right: 6%;
   bottom: 10%;
 
-  width: 540px;
-  height: 430px;
+  width: 520px;
+  height: 520px;
 
   border-radius: 50%;
 
@@ -523,8 +523,8 @@ transform: scale(1.03);
 
   transform:
     perspective(700px)
-    rotateY(-18deg)
-    rotateX(5deg);
+    rotateY(-22deg)
+    rotateX(8deg);
 
   transform-origin: center;
 
@@ -621,8 +621,8 @@ transform: scale(1.03);
     right: 50%;
     bottom: 4%;
 
-    width: 390px;
-    height: 320px;
+    width: 360px;
+    height: 360px;
 
     transform:
       translateX(50%)
