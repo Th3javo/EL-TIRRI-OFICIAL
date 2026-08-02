@@ -711,3 +711,48 @@ transform: scale(1.03);
   }
 
 }
+/* =========================
+   PORTAL MOBILE - AJUSTE FINAL
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero-glow {
+    animation: portalPulseMobile 4s ease-in-out infinite;
+  }
+
+}
+
+@keyframes portalPulseMobile {
+
+  0% {
+    transform:
+      translateX(50%)
+      perspective(700px)
+      rotateY(-12deg)
+      rotateX(4deg)
+      scale(1);
+    filter: brightness(1);
+  }
+
+  50% {
+    transform:
+      translateX(50%)
+      perspective(700px)
+      rotateY(-12deg)
+      rotateX(4deg)
+      scale(1.04);
+    filter: brightness(1.25);
+  }
+
+  100% {
+    transform:
+      translateX(50%)
+      perspective(700px)
+      rotateY(-12deg)
+      rotateX(4deg)
+      scale(1);
+    filter: brightness(1);
+  }
+
+}
