@@ -1,8 +1,9 @@
-const liveStatus = document.getElementById("live-status");
-const liveText = document.getElementById("live-text");
+document.addEventListener("DOMContentLoaded", () => {
 
-function mostrarEstado() {
-  liveText.textContent = "STREAMING";
-}
+  const liveText = document.getElementById("live-text");
 
-mostrarEstado();
+  if (liveText) {
+    liveText.textContent = "STREAMING";
+  }
+
+});
