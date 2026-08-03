@@ -87,12 +87,12 @@ overflow: hidden;
 background:
 radial-gradient(
 circle at 80% 30%,
-rgba(255, 0, 0, 0.20),
+rgba(0, 255, 102, 0.20),
 transparent 35%
 ),
 radial-gradient(
 circle at 20% 80%,
-rgba(255, 0, 0, 0.10),
+rgba(0, 255, 102, 0.10),
 transparent 35%
 );
 }
@@ -176,14 +176,14 @@ background: #00ff66;
 color: #ffffff;
 
 box-shadow:
-0 0 25px rgba(255, 0, 0, 0.35);
+0 0 25px rgba(0, 255, 102, 0.35);
 }
 
 .btn-primary:hover {
 transform: translateY(-4px);
 
 box-shadow:
-0 0 40px rgba(255, 0, 0, 0.6);
+0 0 40px rgba(0, 255, 102, 0.6);
 }
 
 .btn-secondary {
@@ -265,7 +265,7 @@ transition: 0.4s;
 .community-card:hover {
 transform: translateY(-8px);
 
-border-color: rgba(255, 0, 0, 0.5);
+border-color: rgba(0, 255, 102, 0.5);
 
 box-shadow:
 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -297,7 +297,7 @@ STREAM
 background:
 radial-gradient(
 circle at 90% 50%,
-rgba(255, 0, 0, 0.08),
+rgba(0, 255, 102, 0.08),
 transparent 40%
 );
 }
@@ -478,7 +478,7 @@ object-fit: contain;
 z-index: 1;
 
 filter:
-drop-shadow(0 0 25px rgba(255, 0, 0, 0.25));
+drop-shadow(0 0 25px rgba(0, 255, 102, 0.25));
 
 transition: transform 0.5s ease;
 }
@@ -507,19 +507,19 @@ transform: scale(1.03);
       ellipse at center,
       rgba(0, 0, 0, 0.98) 0%,
       rgba(20, 0, 0, 0.95) 48%,
-      rgba(255, 0, 0, 0.25) 58%,
-      rgba(255, 0, 0, 0.95) 67%,
-      rgba(255, 0, 0, 0.15) 72%,
+      rgba(0, 255, 102, 0.25) 58%,
+      rgba(0, 255, 102, 0.95) 67%,
+      rgba(0, 255, 102, 0.15) 72%,
       transparent 76%
     );
 
-  border: 2px solid rgba(255, 0, 0, 0.8);
+  border: 2px solid rgba(0, 255, 102, 0.8);
 
   box-shadow:
-    0 0 20px rgba(255, 0, 0, 0.9),
-    0 0 55px rgba(255, 0, 0, 0.65),
-    0 0 110px rgba(255, 0, 0, 0.3),
-    inset 0 0 35px rgba(255, 0, 0, 0.55);
+    0 0 20px rgba(0, 255, 102, 0.9),
+    0 0 55px rgba(0, 255, 102, 0.65),
+    0 0 110px rgba(0, 255, 102, 0.3),
+    inset 0 0 35px rgba(0, 255, 102, 0.55);
 
   transform:
     perspective(700px)
@@ -550,8 +550,8 @@ transform: scale(1.03);
   border: 2px solid rgba(255, 70, 70, 0.85);
 
   box-shadow:
-    0 0 20px rgba(255, 0, 0, 0.9),
-    inset 0 0 25px rgba(255, 0, 0, 0.5);
+    0 0 20px rgba(0, 255, 102, 0.9),
+    inset 0 0 25px rgba(0, 255, 102, 0.5);
 
   transform: translateZ(15px);
 
@@ -578,8 +578,8 @@ transform: scale(1.03);
     );
 
   box-shadow:
-    inset 0 0 50px rgba(255, 0, 0, 0.45),
-    inset 0 0 100px rgba(255, 0, 0, 0.2);
+    inset 0 0 50px rgba(0, 255, 102, 0.45),
+    inset 0 0 100px rgba(0, 255, 102, 0.2);
 
   opacity: 0.95;
 }
@@ -719,7 +719,7 @@ transform: scale(1.03);
   background:
     radial-gradient(
       circle at 10% 50%,
-      rgba(255, 0, 0, 0.08),
+      rgba(0, 255, 102, 0.08),
       transparent 40%
     );
 }
@@ -782,7 +782,7 @@ transform: scale(1.03);
   background: #00ff66;
 
   box-shadow:
-    0 0 20px rgba(255, 0, 0, 0.8);
+    0 0 20px rgba(0, 255, 102, 0.8);
 
   transform: scaleY(0);
 
@@ -794,11 +794,11 @@ transform: scale(1.03);
 .social-card:hover {
   transform: translateY(-8px);
 
-  border-color: rgba(255, 0, 0, 0.55);
+  border-color: rgba(0, 255, 102, 0.55);
 
   box-shadow:
     0 20px 50px rgba(0, 0, 0, 0.5),
-    0 0 25px rgba(255, 0, 0, 0.08);
+    0 0 25px rgba(0, 255, 102, 0.08);
 }
 
 .social-card:hover::before {
@@ -816,7 +816,7 @@ transform: scale(1.03);
 
   flex-shrink: 0;
 
-  border: 1px solid rgba(255, 0, 0, 0.5);
+  border: 1px solid rgba(0, 255, 102, 0.5);
 
   color: #00ff66;
 
@@ -825,10 +825,10 @@ transform: scale(1.03);
 
   letter-spacing: 1px;
 
-  background: rgba(255, 0, 0, 0.05);
+  background: rgba(0, 255, 102, 0.05);
 
   box-shadow:
-    inset 0 0 15px rgba(255, 0, 0, 0.08);
+    inset 0 0 15px rgba(0, 255, 102, 0.08);
 
   transition: 0.35s ease;
 }
@@ -839,7 +839,7 @@ transform: scale(1.03);
   color: #ffffff;
 
   box-shadow:
-    0 0 25px rgba(255, 0, 0, 0.45);
+    0 0 25px rgba(0, 255, 102, 0.45);
 
   transform: rotate(-5deg) scale(1.05);
 }
@@ -928,7 +928,7 @@ transform: scale(1.03);
 
   box-shadow:
     0 0 8px #00ff66,
-    0 0 20px rgba(255, 0, 0, 0.8);
+    0 0 20px rgba(0, 255, 102, 0.8);
 
   animation: livePulse 1.5s infinite;
 }
