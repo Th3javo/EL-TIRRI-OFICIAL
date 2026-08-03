@@ -65,7 +65,7 @@ transition: 0.3s;
 }
 
 .nav-menu a:hover {
-color: #ff0000;
+color: #00ff66;
 }
 
 /* =========================
@@ -105,7 +105,7 @@ max-width: 700px;
 }
 
 .hero-tag {
-color: #ff0000;
+color: #00ff66;
 
 font-size: 16px;
 font-weight: 700;
@@ -126,7 +126,7 @@ letter-spacing: -5px;
 }
 
 .hero h1 span {
-color: #ff0000;
+color: #00ff66;
 }
 
 .hero-description {
@@ -172,7 +172,7 @@ transition: 0.3s;
 }
 
 .btn-primary {
-background: #ff0000;
+background: #00ff66;
 color: #ffffff;
 
 box-shadow:
@@ -195,9 +195,9 @@ background: rgba(255, 255, 255, 0.03);
 }
 
 .btn-secondary:hover {
-border-color: #ff0000;
+border-color: #00ff66;
 
-color: #ff0000;
+color: #00ff66;
 
 transform: translateY(-4px);
 }
@@ -222,7 +222,7 @@ margin-bottom: 50px;
 }
 
 .section-title span {
-color: #ff0000;
+color: #00ff66;
 
 font-size: 18px;
 font-weight: 700;
@@ -315,7 +315,7 @@ gap: 10px;
 
 margin-bottom: 25px;
 
-color: #ff0000;
+color: #00ff66;
 
 font-weight: 700;
 
@@ -328,10 +328,10 @@ height: 10px;
 
 border-radius: 50%;
 
-background: #ff0000;
+background: #00ff66;
 
 box-shadow:
-0 0 15px #ff0000;
+0 0 15px #00ff66;
 
 animation: pulse 1.5s infinite;
 }
@@ -349,7 +349,7 @@ padding-bottom: 150px;
 }
 
 .community-card {
-border-left: 3px solid #ff0000;
+border-left: 3px solid #00ff66;
 }
 
 /* =========================
@@ -779,7 +779,7 @@ transform: scale(1.03);
   width: 3px;
   height: 100%;
 
-  background: #ff0000;
+  background: #00ff66;
 
   box-shadow:
     0 0 20px rgba(255, 0, 0, 0.8);
@@ -818,7 +818,7 @@ transform: scale(1.03);
 
   border: 1px solid rgba(255, 0, 0, 0.5);
 
-  color: #ff0000;
+  color: #00ff66;
 
   font-size: 17px;
   font-weight: 700;
@@ -834,7 +834,7 @@ transform: scale(1.03);
 }
 
 .social-card:hover .social-icon {
-  background: #ff0000;
+  background: #00ff66;
 
   color: #ffffff;
 
@@ -869,7 +869,7 @@ transform: scale(1.03);
 }
 
 .social-card:hover .social-arrow {
-  color: #ff0000;
+  color: #00ff66;
 
   transform: translate(4px, -4px);
 }
@@ -915,7 +915,7 @@ transform: scale(1.03);
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: #ff0000;
+  color: #00ff66;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -924,10 +924,10 @@ transform: scale(1.03);
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: #ff0000;
+  background: #00ff66;
 
   box-shadow:
-    0 0 8px #ff0000,
+    0 0 8px #00ff66,
     0 0 20px rgba(255, 0, 0, 0.8);
 
   animation: livePulse 1.5s infinite;
