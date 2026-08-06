@@ -1465,3 +1465,302 @@ width: 100%;
 }
 
 }
+
+/* =========================
+ESTADÍSTICAS
+========================= */
+
+.stats-section {
+position: relative;
+
+background:
+radial-gradient(
+circle at 50% 50%,
+rgba(0, 255, 102, 0.07),
+transparent 55%
+);
+
+overflow: hidden;
+}
+
+.stats-section::before {
+content: "";
+
+position: absolute;
+
+width: 500px;
+height: 500px;
+
+top: 50%;
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+background:
+radial-gradient(
+circle,
+rgba(0, 255, 102, 0.06),
+transparent 70%
+);
+
+pointer-events: none;
+}
+
+.stats-grid {
+position: relative;
+
+display: grid;
+
+grid-template-columns:
+repeat(5, 1fr);
+
+gap: 15px;
+
+max-width: 1250px;
+}
+
+.stat-card {
+position: relative;
+
+min-height: 190px;
+
+padding: 30px 22px;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+overflow: hidden;
+
+background:
+linear-gradient(
+145deg,
+rgba(255, 255, 255, 0.065),
+rgba(255, 255, 255, 0.012)
+);
+
+border: 1px solid rgba(255, 255, 255, 0.08);
+
+backdrop-filter: blur(12px);
+
+transition:
+transform 0.35s ease,
+border-color 0.35s ease,
+box-shadow 0.35s ease;
+}
+
+/* Línea lateral */
+
+.stat-card::before {
+content: "";
+
+position: absolute;
+
+left: 0;
+top: 0;
+
+width: 3px;
+height: 100%;
+
+background: var(--green);
+
+box-shadow:
+0 0 15px var(--green),
+0 0 30px rgba(0, 255, 102, 0.4);
+
+transform: scaleY(0);
+
+transform-origin: bottom;
+
+transition: transform 0.35s ease;
+}
+
+/* Brillo superior */
+
+.stat-card::after {
+content: "";
+
+position: absolute;
+
+width: 100px;
+height: 100px;
+
+right: -45px;
+top: -45px;
+
+background:
+radial-gradient(
+circle,
+rgba(0, 255, 102, 0.15),
+transparent 70%
+);
+
+transition: 0.4s ease;
+}
+
+.stat-card:hover {
+transform: translateY(-10px);
+
+border-color:
+rgba(0, 255, 102, 0.5);
+
+box-shadow:
+0 20px 45px rgba(0, 0, 0, 0.55),
+0 0 25px rgba(0, 255, 102, 0.08);
+}
+
+.stat-card:hover::before {
+transform: scaleY(1);
+}
+
+.stat-card:hover::after {
+transform: scale(2);
+}
+
+/* NÚMERO */
+
+.stat-number {
+position: relative;
+
+z-index: 2;
+
+color: #ffffff;
+
+font-size: clamp(32px, 3vw, 48px);
+
+font-weight: 700;
+
+line-height: 1;
+
+letter-spacing: -1px;
+
+text-shadow:
+0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+.stat-number span {
+color: var(--green);
+
+text-shadow:
+0 0 12px rgba(0, 255, 102, 0.7);
+}
+
+/* ETIQUETA */
+
+.stat-label {
+position: relative;
+
+z-index: 2;
+
+margin-top: 15px;
+
+color: #ffffff;
+
+font-size: 13px;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+}
+
+/* PLATAFORMA */
+
+.stat-platform {
+position: relative;
+
+z-index: 2;
+
+margin-top: 5px;
+
+color: var(--green);
+
+font-size: 12px;
+
+font-weight: 600;
+
+letter-spacing: 2px;
+
+text-shadow:
+0 0 10px rgba(0, 255, 102, 0.35);
+}
+
+/* TARJETA DESTACADA */
+
+.stat-card-featured {
+background:
+linear-gradient(
+145deg,
+rgba(0, 255, 102, 0.10),
+rgba(255, 255, 255, 0.015)
+);
+
+border-color:
+rgba(0, 255, 102, 0.25);
+}
+
+.stat-card-featured .stat-number {
+font-size: clamp(40px, 4vw, 58px);
+
+color: var(--green);
+
+text-shadow:
+0 0 15px rgba(0, 255, 102, 0.45),
+0 0 35px rgba(0, 255, 102, 0.15);
+}
+
+/* =========================
+ESTADÍSTICAS - TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+.stats-grid {
+grid-template-columns:
+repeat(3, 1fr);
+}
+
+}
+
+/* =========================
+ESTADÍSTICAS - MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+.stats-grid {
+grid-template-columns: 1fr 1fr;
+
+gap: 12px;
+
+}
+
+.stat-card {
+min-height: 165px;
+
+padding: 24px 18px;
+
+}
+
+.stat-number {
+font-size: 32px;
+}
+
+.stat-card-featured {
+grid-column: span 2;
+}
+
+}
+
+@media (max-width: 480px) {
+
+.stats-grid {
+grid-template-columns: 1fr;
+}
+
+.stat-card-featured {
+grid-column: span 1;
+}
+
+}
