@@ -2253,3 +2253,453 @@ grid-column: span 1;
   }
 
 }
+
+/* =========================
+CONTACTO
+========================= */
+
+.contact-section {
+position: relative;
+
+background:
+radial-gradient(
+circle at 80% 50%,
+rgba(0, 255, 102, 0.10),
+transparent 40%
+),
+#050505;
+
+overflow: hidden;
+}
+
+/* Línea decorativa */
+
+.contact-section::before {
+content: "";
+
+position: absolute;
+
+width: 500px;
+height: 500px;
+
+right: -180px;
+top: 50%;
+
+transform: translateY(-50%);
+
+background:
+radial-gradient(
+circle,
+rgba(0, 255, 102, 0.10),
+transparent 70%
+);
+
+filter: blur(20px);
+
+pointer-events: none;
+}
+
+/* =========================
+CONTENEDOR
+========================= */
+
+.contact-wrapper {
+position: relative;
+
+display: grid;
+
+grid-template-columns:
+1.4fr 0.8fr;
+
+gap: 50px;
+
+max-width: 1200px;
+
+padding: 55px;
+
+background:
+linear-gradient(
+135deg,
+rgba(255, 255, 255, 0.06),
+rgba(255, 255, 255, 0.012)
+);
+
+border: 1px solid rgba(255, 255, 255, 0.08);
+
+backdrop-filter: blur(15px);
+
+box-shadow:
+0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+/* Línea verde */
+
+.contact-wrapper::before {
+content: "";
+
+position: absolute;
+
+left: 0;
+top: 0;
+
+width: 3px;
+height: 100%;
+
+background: var(--green);
+
+box-shadow:
+0 0 20px var(--green),
+0 0 40px rgba(0, 255, 102, 0.35);
+}
+
+/* =========================
+CONTENIDO
+========================= */
+
+.contact-content {
+position: relative;
+
+z-index: 2;
+}
+
+.contact-tag {
+display: inline-block;
+
+margin-bottom: 18px;
+
+color: var(--green);
+
+font-size: 13px;
+
+font-weight: 700;
+
+letter-spacing: 3px;
+
+text-shadow:
+0 0 12px rgba(0, 255, 102, 0.45);
+}
+
+.contact-content h3 {
+max-width: 650px;
+
+font-size: clamp(38px, 5vw, 65px);
+
+line-height: 0.95;
+
+letter-spacing: -2px;
+
+margin-bottom: 25px;
+}
+
+.contact-content h3 span {
+color: var(--green);
+
+text-shadow:
+0 0 20px rgba(0, 255, 102, 0.35);
+}
+
+.contact-content > p {
+max-width: 650px;
+
+color: #999;
+
+font-size: 18px;
+
+line-height: 1.6;
+
+margin-bottom: 35px;
+}
+
+/* =========================
+OPCIONES
+========================= */
+
+.contact-options {
+display: grid;
+
+grid-template-columns:
+repeat(2, minmax(200px, 1fr));
+
+gap: 15px;
+
+max-width: 700px;
+
+margin-bottom: 30px;
+}
+
+.contact-item {
+display: flex;
+
+align-items: center;
+
+gap: 15px;
+
+padding: 18px;
+
+background:
+rgba(255, 255, 255, 0.025);
+
+border: 1px solid rgba(255, 255, 255, 0.07);
+
+transition: 0.3s ease;
+}
+
+.contact-item:hover {
+border-color:
+rgba(0, 255, 102, 0.4);
+
+background:
+rgba(0, 255, 102, 0.04);
+
+transform: translateY(-3px);
+}
+
+/* =========================
+ICONOS
+========================= */
+
+.contact-icon {
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+flex-shrink: 0;
+
+width: 48px;
+height: 48px;
+
+color: var(--green);
+
+font-size: 20px;
+
+background: transparent;
+
+border: none;
+
+text-shadow:
+0 0 12px rgba(0, 255, 102, 0.5);
+}
+
+.contact-item small {
+display: block;
+
+margin-bottom: 4px;
+
+color: #666;
+
+font-size: 10px;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+}
+
+.contact-item strong {
+display: block;
+
+color: #fff;
+
+font-size: 14px;
+
+letter-spacing: 1px;
+}
+
+/* =========================
+BOTÓN
+========================= */
+
+.contact-btn {
+margin-top: 5px;
+}
+
+/* =========================
+VISUAL
+========================= */
+
+.contact-visual {
+position: relative;
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+justify-content: center;
+
+min-height: 300px;
+
+overflow: hidden;
+}
+
+.contact-glow {
+position: absolute;
+
+width: 260px;
+height: 260px;
+
+border-radius: 50%;
+
+background:
+radial-gradient(
+circle,
+rgba(0, 255, 102, 0.18),
+rgba(0, 255, 102, 0.04) 45%,
+transparent 70%
+);
+
+box-shadow:
+0 0 50px rgba(0, 255, 102, 0.12);
+
+animation:
+contactPulse 4s ease-in-out infinite;
+}
+
+.contact-symbol {
+position: relative;
+
+z-index: 2;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+width: 130px;
+height: 130px;
+
+color: var(--green);
+
+font-size: 52px;
+
+background:
+rgba(0, 255, 102, 0.035);
+
+border: 1px solid rgba(0, 255, 102, 0.25);
+
+transform:
+rotate(45deg);
+
+box-shadow:
+0 0 35px rgba(0, 255, 102, 0.10),
+inset 0 0 30px rgba(0, 255, 102, 0.04);
+}
+
+.contact-symbol i {
+transform: rotate(-45deg);
+
+text-shadow:
+0 0 20px rgba(0, 255, 102, 0.7);
+}
+
+.contact-visual > span {
+position: relative;
+
+z-index: 2;
+
+margin-top: 35px;
+
+color: #777;
+
+font-size: 12px;
+
+font-weight: 700;
+
+letter-spacing: 4px;
+}
+
+/* =========================
+ANIMACIÓN
+========================= */
+
+@keyframes contactPulse {
+
+0% {
+transform: scale(1);
+
+opacity: 0.7;
+
+}
+
+50% {
+transform: scale(1.12);
+
+opacity: 1;
+
+}
+
+100% {
+transform: scale(1);
+
+opacity: 0.7;
+
+}
+
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+.contact-wrapper {
+grid-template-columns: 1fr;
+
+padding: 40px;
+
+}
+
+.contact-visual {
+min-height: 230px;
+}
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+.contact-wrapper {
+padding: 30px 22px;
+
+gap: 20px;
+
+}
+
+.contact-content h3 {
+font-size: 38px;
+}
+
+.contact-content > p {
+font-size: 16px;
+}
+
+.contact-options {
+grid-template-columns: 1fr;
+}
+
+.contact-visual {
+min-height: 220px;
+}
+
+.contact-symbol {
+width: 105px;
+height: 105px;
+
+font-size: 42px;
+
+}
+
+.contact-glow {
+width: 220px;
+height: 220px;
+}
+
+.contact-btn {
+width: 100%;
+}
+
+}
