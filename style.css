@@ -2703,3 +2703,249 @@ width: 100%;
 }
 
 }
+
+/* =========================
+SERVICIOS PARA MARCAS
+========================= */
+
+.brand-services-section {
+position: relative;
+
+background:
+radial-gradient(
+circle at 50% 30%,
+rgba(0, 255, 102, 0.07),
+transparent 50%
+);
+
+overflow: hidden;
+}
+
+.brand-services-grid {
+position: relative;
+
+display: grid;
+
+grid-template-columns:
+repeat(4, 1fr);
+
+gap: 18px;
+
+max-width: 1250px;
+}
+
+/* =========================
+TARJETA
+========================= */
+
+.brand-service-card {
+position: relative;
+
+min-height: 240px;
+
+padding: 32px 25px;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+background:
+linear-gradient(
+145deg,
+rgba(255, 255, 255, 0.06),
+rgba(255, 255, 255, 0.012)
+);
+
+border: 1px solid rgba(255, 255, 255, 0.08);
+
+backdrop-filter: blur(12px);
+
+overflow: hidden;
+
+transition:
+transform 0.35s ease,
+border-color 0.35s ease,
+box-shadow 0.35s ease;
+}
+
+/* Línea verde lateral */
+
+.brand-service-card::before {
+content: "";
+
+position: absolute;
+
+left: 0;
+top: 0;
+
+width: 3px;
+height: 100%;
+
+background: var(--green);
+
+box-shadow:
+0 0 15px var(--green),
+0 0 30px rgba(0, 255, 102, 0.4);
+
+transform: scaleY(0);
+
+transform-origin: bottom;
+
+transition: transform 0.35s ease;
+}
+
+/* Brillo */
+
+.brand-service-card::after {
+content: "";
+
+position: absolute;
+
+width: 120px;
+height: 120px;
+
+right: -60px;
+top: -60px;
+
+border-radius: 50%;
+
+background:
+radial-gradient(
+circle,
+rgba(0, 255, 102, 0.15),
+transparent 70%
+);
+
+transition: 0.4s ease;
+}
+
+.brand-service-card:hover {
+transform: translateY(-9px);
+
+border-color:
+rgba(0, 255, 102, 0.5);
+
+box-shadow:
+0 20px 50px rgba(0, 0, 0, 0.5),
+0 0 25px rgba(0, 255, 102, 0.08);
+}
+
+.brand-service-card:hover::before {
+transform: scaleY(1);
+}
+
+.brand-service-card:hover::after {
+transform: scale(2);
+}
+
+/* =========================
+ICONO
+========================= */
+
+.brand-service-icon {
+position: relative;
+
+z-index: 2;
+
+width: 55px;
+height: 55px;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+margin-bottom: 25px;
+
+color: #ffffff;
+
+font-size: 25px;
+
+background: transparent;
+
+border: none;
+
+text-shadow:
+0 0 15px rgba(255, 255, 255, 0.25);
+
+transition:
+color 0.35s ease,
+transform 0.35s ease,
+text-shadow 0.35s ease;
+}
+
+.brand-service-card:hover .brand-service-icon {
+color: var(--green);
+
+transform: scale(1.12);
+
+text-shadow:
+0 0 15px rgba(0, 255, 102, 0.7);
+}
+
+/* =========================
+TEXTO
+========================= */
+
+.brand-service-card h3 {
+position: relative;
+
+z-index: 2;
+
+margin-bottom: 12px;
+
+color: #ffffff;
+
+font-size: 18px;
+
+letter-spacing: 1.5px;
+}
+
+.brand-service-card p {
+position: relative;
+
+z-index: 2;
+
+color: #888888;
+
+font-size: 15px;
+
+line-height: 1.5;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+.brand-services-grid {
+grid-template-columns:
+repeat(2, 1fr);
+}
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+.brand-services-grid {
+grid-template-columns: 1fr;
+
+gap: 14px;
+
+}
+
+.brand-service-card {
+min-height: 210px;
+
+padding: 28px 22px;
+
+}
+
+}
