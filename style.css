@@ -2969,9 +2969,9 @@ padding: 28px 22px;
 }
 
 .hero h1 sup {
-  font-size: 0.22em;
+  font-size: 0.14em;
   vertical-align: top;
-  margin-left: 4px;
+  margin-left: 3px;
   color: var(--green);
   text-shadow:
     0 0 10px rgba(0, 255, 102, 0.5);
