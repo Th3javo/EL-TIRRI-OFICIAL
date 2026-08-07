@@ -1896,3 +1896,69 @@ grid-column: span 1;
   }
 
 }
+/* =========================
+   ICONOS ESTADÍSTICAS
+   ========================= */
+
+.stat-icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: auto;
+  height: auto;
+
+  margin-bottom: 18px;
+
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+
+  color: #ffffff;
+
+  font-size: 38px;
+
+  z-index: 3;
+}
+
+.stat-icon i {
+  color: #ffffff;
+
+  font-size: 38px;
+
+  text-shadow:
+    0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+/* Sin marco verde al pasar el mouse */
+
+.stat-card:hover .stat-icon {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+
+  color: #ffffff;
+}
+
+.stat-card:hover .stat-icon i {
+  color: #ffffff;
+
+  transform: scale(1.08);
+
+  transition: 0.3s ease;
+}
+
+/* =========================
+   ESTADÍSTICAS - MÓVIL
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .stat-icon,
+  .stat-icon i {
+    font-size: 32px;
+  }
+
+}
