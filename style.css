@@ -2949,3 +2949,21 @@ padding: 28px 22px;
 }
 
 }
+
+/* Primera palabra en verde */
+.brand-service-card h3 span,
+.work-card h3 span {
+  color: var(--green);
+
+  text-shadow:
+    0 0 10px rgba(0, 255, 102, 0.55),
+    0 0 20px rgba(0, 255, 102, 0.20);
+}
+.brand-service-card:hover h3 span,
+.work-card:hover h3 span {
+  color: var(--green);
+
+  text-shadow:
+    0 0 12px rgba(0, 255, 102, 0.75),
+    0 0 25px rgba(0, 255, 102, 0.35);
+}
