@@ -2976,3 +2976,368 @@ padding: 28px 22px;
   text-shadow:
     0 0 10px rgba(0, 255, 102, 0.5);
 }
+
+HTML — Floating CTA
+
+<!-- =========================
+     FLOATING STAKE CTA
+========================= -->
+
+<a
+  class="floating-stake"
+  href="https://c3Rha2UuYmV0LmFyLz9vZmZlcj1lbHRpcnJpJmM9ZWx0aXJyaQ=="
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Regístrate con el código ELTIRRI"
+>
+
+  <div class="stake-cta-glow"></div>
+
+  <div class="stake-cta-content">
+
+    <div class="stake-cta-text">
+      <span class="stake-small">REGÍSTRATE CON MI CÓDIGO</span>
+
+      <strong class="stake-code">
+        ELTIRRI
+      </strong>
+
+      <span class="stake-prize">
+        TE LLEVAS PREMIOS !!
+      </span>
+    </div>
+
+    <div class="stake-logo-container">
+      <img
+        src="stake-logo.png"
+        alt="Stake"
+        class="stake-logo"
+      >
+    </div>
+
+  </div>
+
+  <div class="stake-cta-arrow">
+    →
+  </div>
+
+</a>
+
+CSS — Diseño
+
+/* =========================
+   FLOATING STAKE CTA
+========================= */
+
+.floating-stake {
+  position: fixed;
+  right: 24px;
+  bottom: 25px;
+
+  width: 275px;
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 14px 17px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(10, 10, 10, 0.97),
+      rgba(20, 20, 20, 0.94)
+    );
+
+  border: 1px solid rgba(0, 255, 102, 0.65);
+  border-radius: 16px;
+
+  color: #fff;
+  text-decoration: none;
+
+  z-index: 9999;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 0 18px rgba(0, 255, 102, 0.18),
+    inset 0 0 18px rgba(0, 255, 102, 0.04);
+
+  backdrop-filter: blur(12px);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Brillo sutil */
+
+.floating-stake::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 60%;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.08),
+      transparent
+    );
+
+  transform: skewX(-20deg);
+
+  animation: stakeShine 5s infinite;
+}
+
+
+@keyframes stakeShine {
+
+  0% {
+    left: -100%;
+  }
+
+  30% {
+    left: 130%;
+  }
+
+  100% {
+    left: 130%;
+  }
+
+}
+
+
+/* Glow detrás */
+
+.stake-cta-glow {
+  position: absolute;
+
+  width: 90px;
+  height: 90px;
+
+  right: 45px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background: #00ff66;
+
+  filter: blur(55px);
+
+  opacity: 0.10;
+
+  pointer-events: none;
+}
+
+
+/* Contenido */
+
+.stake-cta-content {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  gap: 12px;
+}
+
+
+/* Textos */
+
+.stake-cta-text {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.1;
+}
+
+
+.stake-small {
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.2px;
+
+  color: rgba(255,255,255,0.65);
+
+  margin-bottom: 5px;
+}
+
+
+.stake-code {
+  font-size: 22px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #00ff66;
+
+  text-shadow:
+    0 0 8px rgba(0,255,102,0.45);
+}
+
+
+.stake-prize {
+  margin-top: 5px;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  color: #fff;
+}
+
+
+/* Logo */
+
+.stake-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 65px;
+}
+
+
+.stake-logo {
+  width: 62px;
+  height: auto;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 0 7px rgba(0,255,102,0.35)
+    );
+
+  transition: transform 0.3s ease;
+}
+
+
+/* Flecha */
+
+.stake-cta-arrow {
+  position: absolute;
+
+  right: 8px;
+  bottom: 7px;
+
+  width: 19px;
+  height: 19px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #00ff66;
+
+  color: #050505;
+
+  font-size: 13px;
+  font-weight: 900;
+
+  box-shadow:
+    0 0 10px rgba(0,255,102,0.4);
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+/* Hover */
+
+.floating-stake:hover {
+
+  transform:
+    translateY(-5px);
+
+  border-color: #00ff66;
+
+  box-shadow:
+    0 0 25px rgba(0,255,102,0.28),
+    inset 0 0 20px rgba(0,255,102,0.06);
+}
+
+
+.floating-stake:hover .stake-logo {
+
+  transform:
+    scale(1.08);
+}
+
+
+.floating-stake:hover .stake-cta-arrow {
+
+  transform:
+    translateX(3px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .floating-stake {
+
+    right: 12px;
+    bottom: 14px;
+
+    width: 230px;
+    min-height: 76px;
+
+    padding: 11px 13px;
+
+    border-radius: 13px;
+  }
+
+
+  .stake-small {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+
+
+  .stake-code {
+    font-size: 18px;
+  }
+
+
+  .stake-prize {
+    font-size: 9px;
+  }
+
+
+  .stake-logo {
+    width: 50px;
+  }
+
+
+  .stake-cta-arrow {
+
+    width: 17px;
+    height: 17px;
+
+    font-size: 11px;
+  }
+
+}
