@@ -2977,54 +2977,6 @@ padding: 28px 22px;
     0 0 10px rgba(0, 255, 102, 0.5);
 }
 
-HTML — Floating CTA
-
-<!-- =========================
-     FLOATING STAKE CTA
-========================= -->
-
-<a
-  class="floating-stake"
-  href="https://c3Rha2UuYmV0LmFyLz9vZmZlcj1lbHRpcnJpJmM9ZWx0aXJyaQ=="
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Regístrate con el código ELTIRRI"
->
-
-  <div class="stake-cta-glow"></div>
-
-  <div class="stake-cta-content">
-
-    <div class="stake-cta-text">
-      <span class="stake-small">REGÍSTRATE CON MI CÓDIGO</span>
-
-      <strong class="stake-code">
-        ELTIRRI
-      </strong>
-
-      <span class="stake-prize">
-        TE LLEVAS PREMIOS !!
-      </span>
-    </div>
-
-    <div class="stake-logo-container">
-      <img
-        src="stake-logo.png"
-        alt="Stake"
-        class="stake-logo"
-      >
-    </div>
-
-  </div>
-
-  <div class="stake-cta-arrow">
-    →
-  </div>
-
-</a>
-
-CSS — Diseño
-
 /* =========================
    FLOATING STAKE CTA
 ========================= */
