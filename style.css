@@ -1100,23 +1100,24 @@ width: 100%;
 }
 
 .hero-image {
+  width: 90vw;
+  max-height: 60vh;
 
-width: 90vw;
+  right: 27%;
 
-max-height: 60vh;
+  transform: translateX(50%);
 
-right: 50%;
+  bottom: 0;
 
-transform:
-  translateX(50%);
+  opacity: 0.85;
 
-bottom: 0;
-
-opacity: 0.85;
-
-z-index: 3;
-
+  z-index: 3;
 }
+
+.hero-image:hover {
+  transform: translateX(50%);
+}
+
 
 .hero-image:hover {
 
